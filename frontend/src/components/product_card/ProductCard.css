@@ -1,0 +1,135 @@
+.product-page {
+  display: flex;
+  align-items: flex-start; /* so card sits below navbar */
+  justify-content: center;
+  padding: 0.5rem;
+  max-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.products-card {
+  background: #f0f4f8; /* light blue-grey */
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 280px;
+  height: 400px;
+  cursor: default;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.image-section {
+  display: flex;
+  flex-direction: row;
+  height: 200px; /* keeps images from growing too tall */
+}
+
+.main-image-link {
+  display: contents;    /* let see child styles */
+}
+
+.main-image {
+  display: block;
+  max-width: 80%;     /* leave room for thumbnails */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0 1rem;
+}
+
+.thumbnail {
+  width: 45px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.thumbnail.active {
+  border: 2px solid #f0f4f8; /* same as card bg */
+  padding: 2px;
+}
+
+.details-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.product-description {
+  font-size: clamp(0.8rem, 1.5vw ,1rem);
+  text-align: left;
+  color: #555;
+}
+
+.purchase-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  padding-right: 0.5rem;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.count-btn {
+  width: 24px;
+  height: auto;
+  border: none;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s ease;
+}
+
+.count-btn:hover {
+  background: #aaa;
+}
+
+.item-count {
+  font-size: 1rem;
+  min-width: 27px;
+  text-align: center;
+}
+
+.cart-button {
+  background: #06788f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.cart-button:hover {
+  background: #024c5a;
+}

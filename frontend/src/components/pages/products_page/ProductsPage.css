@@ -1,0 +1,203 @@
+.products-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: rgb(3, 99, 118); /* Same as navbar */
+  color: white;
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container {
+  padding: 20px 0 30px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul {
+  list-style: none;  /* ensure no bullet */
+  margin: 0.5rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.sidebar li {
+  margin: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none ;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  font-weight: bold;
+}
+
+.sidebar a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.sort-buttons {
+  display: flex;
+  flex-direction: column; /* stack price above rating */
+  align-items: center;    
+  gap: 0.25rem;              
+}
+
+.sort-buttons-price,
+.sort-buttons-rating {
+  display: flex;
+  gap: 2rem; 
+  justify-content: center;
+}
+
+.sort-buttons-price {
+  border-bottom: 2px solid white;
+  width: 80%;          /* shortening line */
+  padding-bottom: 0.25rem;
+}
+
+.sort-buttons button {
+  background: none;
+  color: white;
+  border: 3px solid transparent;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.sort-buttons button:hover {
+  background: #79a91a;
+}
+
+.sort-buttons button:active {
+  transform: scale(0.98);
+}
+
+.sort-buttons button.active {
+  border: 3px solid #79a91a;
+  transform: scale(0.98);
+}
+
+
+
+/* Price filter */
+.price-filter {
+  margin-top: 1rem;
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  top: 14px;
+  z-index: 1;
+}
+
+.thumb::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 16px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  
+}
+
+.thumb::-moz-range-thumb {
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+/* Track highlight between sliders */
+.slider-track {
+  position: absolute;
+  height: 4px;
+  background: rgb(255, 255, 255);
+  top: 12px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.ship-to {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.ship-destination {
+  font-weight: bold;
+  color: #ffd700; /* highlight */
+}
+
+/* Product area */
+.products-area {
+  flex: 1;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+.products-area h2{
+  padding: 0.5rem 0 0 1rem;
+}
+
+.products-area .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.products-area.single-cards {
+  list-style: none;  /* ensure no bullet */
+  margin: 0;
+  padding: 0;
+}
+
+.products-area .grid-container p{
+  padding: 0.5rem 1rem;
+}

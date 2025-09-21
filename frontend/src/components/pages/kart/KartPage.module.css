@@ -1,0 +1,157 @@
+.kartPage {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f8fcff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.userHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.username {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin: 0;
+}
+
+.email {
+  color: #555;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.editBtn{
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #5b48f3;
+  color: #fff;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background: #3b24e4;
+}
+
+.editBtn a{
+  text-decoration: none;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table th {
+  background:  rgb(3, 99, 118);
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.itemImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity button {
+  background: #f4f4f4;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.summary {
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.totalRow {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  border-top: 2px solid #ddd;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.checkoutBtn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #5b48f3;
+  color: #fff;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  cursor: pointer;
+}
+
+.checkoutBtn:hover{ 
+  background: #3b24e4;
+}
